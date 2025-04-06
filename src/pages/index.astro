@@ -1,11 +1,58 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
+<Layout title="Home">
+  <section style="margin-bottom: 2rem;">
+    <h2 style="font-size: 2rem;">Featured Story</h2>
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 1rem;">
+      <img src="https://via.placeholder.com/600x400" alt="Featured Image" style="width: 100%; height: auto;" />
+      <div>
+        <h3>Headline Goes Here</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </section>
 
-<Layout>
-	<Welcome />
+  <section style="margin-bottom: 2rem;">
+    <h2>News</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;">
+      <div>
+        <img src="https://via.placeholder.com/300x200" alt="News Image" style="width: 100%; height: auto;" />
+        <h3>News Title 1</h3>
+        <p>Short snippet here...</p>
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/300x200" alt="News Image" style="width: 100%; height: auto;" />
+        <h3>News Title 2</h3>
+        <p>Short snippet here...</p>
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/300x200" alt="News Image" style="width: 100%; height: auto;" />
+        <h3>News Title 3</h3>
+        <p>Short snippet here...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Repeat similar sections for Business, Counties, Politics, Sports, Opinion -->
+  <section style="margin-bottom: 2rem;">
+    <h2>Business</h2>
+    <!-- Add previews here -->
+  </section>
+  <section style="margin-bottom: 2rem;">
+    <h2>Counties</h2>
+    <!-- Add previews here -->
+  </section>
+  <section style="margin-bottom: 2rem;">
+    <h2>Politics</h2>
+    <!-- Add previews here -->
+  </section>
+  <section style="margin-bottom: 2rem;">
+    <h2>Sports</h2>
+    <!-- Add previews here -->
+  </section>
+  <section style="margin-bottom: 2rem;">
+    <h2>Opinion</h2>
+    <!-- Add previews here -->
+  </section>
 </Layout>
