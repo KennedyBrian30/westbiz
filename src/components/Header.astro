@@ -1,22 +1,29 @@
 ---
 ---
-<header style="background: black; padding: 1rem;">
-  <div style="display: flex; align-items: center; max-width: 1200px; margin: 0 auto;">
-    <h1 style="margin: 0;">
-      <a href="/" style="text-decoration: none;">
-        <span style="color: yellow; font-size: 2rem;">WEST</span><span style="color: white; font-size: 2rem;">biz</span>
+<header class="site-header">
+  <div class="header-container">
+    <h1 class="logo">
+      <a href="/">
+        <span class="west">WEST</span><span class="biz">biz.co.ke</span>
       </a>
     </h1>
-    <p style="color: #ccc; margin-left: 1rem; font-size: 1rem;">When We Know, You Know</p>
+    <p class="tagline">When We Know, You Know</p>
+    <nav class="nav-menu">
+      <button class="menu-toggle">☰</button>
+      <ul class="nav-list">
+        <li><a href="/news">News</a></li>
+        <li><a href="/business">Business</a></li>
+        <li><a href="/counties">Counties</a></li>
+        <li><a href="/politics">Politics</a></li>
+        <li><a href="/sports">Sports</a></li>
+        <li><a href="/opinion">Opinion</a></li>
+      </ul>
+    </nav>
   </div>
-  <nav style="max-width: 1200px; margin: 1rem auto;">
-    <ul style="list-style: none; padding: 0; display: flex; gap: 2rem;">
-      <li><a href="/news" style="color: white; text-decoration: none;">News</a></li>
-      <li><a href="/business" style="color: white; text-decoration: none;">Business</a></li>
-      <li><a href="/counties" style="color: white; text-decoration: none;">Counties</a></li>
-      <li><a href="/politics" style="color: white; text-decoration: none;">Politics</a></li>
-      <li><a href="/sports" style="color: white; text-decoration: none;">Sports</a></li>
-      <li><a href="/opinion" style="color: white; text-decoration: none;">Opinion</a></li>
-    </ul>
-  </nav>
 </header>
+
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', () => {
+    document.querySelector('.nav-list').classList.toggle('active');
+  });
+</script>
